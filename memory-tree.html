@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Three — Our Memory Tree 🌳❤️</title>
+    <link rel="stylesheet" href="css/memory-tree.css">
+</head>
+<body>
+
+
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="music/har-pal-badal-rahi-hai-zindagi-instrumental.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-button" aria-label="Music" title="Play music">🎵</button>
+
+
+<section class="tree-section" id="memoryTree">
+<div class="tree-content">
+        <p class="section-label">CHAPTER THREE</p>
+        <h1>Our Memory Tree 🌳❤️</h1>
+
+        <p class="tree-intro">
+            Every little moment became a part of our story...
+            <br><br>
+            Some memories make me smile, some make me emotional...
+            <br>
+            but every single one means something to me. ❤️
+            <br><br>
+            Click the flowers to discover what I still remember. 🌸
+        </p>
+
+        <div class="memory-tree">
+            <div class="tree-trunk"></div>
+            <div class="branch branch-1"></div>
+            <div class="branch branch-2"></div>
+            <div class="branch branch-3"></div>
+            <div class="branch branch-4"></div>
+            <div class="branch branch-5"></div>
+            <div class="tree-heart">❤️</div>
+
+            <button class="memory memory-1" onclick="showMemory(1)" aria-label="Open Memory 1">🌸</button>
+            <button class="memory memory-2" onclick="showMemory(2)" aria-label="Open Memory 2">🌷</button>
+            <button class="memory memory-3" onclick="showMemory(3)" aria-label="Open Memory 3">🌺</button>
+            <button class="memory memory-4" onclick="showMemory(4)" aria-label="Open Memory 4">🌸</button>
+            <button class="memory memory-5" onclick="showMemory(5)" aria-label="Open Memory 5">🌷</button>
+            <button class="memory memory-6" onclick="showMemory(6)" aria-label="Open Memory 6">🌺</button>
+            <button class="memory memory-7" onclick="showMemory(7)" aria-label="Open Memory 7">🌸</button>
+            <button class="memory memory-8" onclick="showMemory(8)" aria-label="Open Memory 8">🌷</button>
+            <button class="memory memory-9" onclick="showMemory(9)" aria-label="Open Memory 9">🌺</button>
+            <button class="memory memory-10" onclick="showMemory(10)" aria-label="Open Memory 10">🌸</button>
+        </div>
+
+        <div class="tree-ending">
+            <p>10 memories...</p>
+            <h2>But these are only a few of the moments I carry in my heart. ❤️</h2>
+            <p class="tree-ending-small">And the best part?<br>Our story is still growing. 🌱</p>
+        </div>
+
+        <a class="continue-button" href="chapter4.html" data-next-page>Continue Our Story 💌</a>
+    </div>
+</section>
+
+
+<!-- MEMORY POPUP -->
+<div class="memory-popup" id="memoryPopup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <button class="popup-close" id="popupClose" type="button" aria-label="Close memory">✕</button>
+        <p class="popup-number" id="popupNumber">MEMORY 1</p>
+        <div class="popup-icon">❤️</div>
+        <h2 id="popupTitle">The First Wish ❤️</h2>
+        <p id="popupText">Our story started with a little wish...</p>
+        <button class="popup-open" id="popupCloseButton" type="button">Close Memory ❤️</button>
+    </div>
+</div>
+
+<script src="js/memory-tree.js"></script>
+</body>
+</html>
